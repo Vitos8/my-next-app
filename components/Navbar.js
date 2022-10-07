@@ -5,6 +5,11 @@ import React from 'react';
 
 const links = [
 	{
+		href: '/',
+		text: 'Home',
+		key: 3
+	},
+	{
 		href: '/works',
 		text: 'Works',
 		key: 1
@@ -14,15 +19,10 @@ const links = [
 		text: 'Blogs',
 		key: 2
 	},
-	{
-		href: '/contact',
-		text: 'Contact',
-		key: 3
-	}
 ];
 
 const Navbar = () => {
-	const [activeLink, setActiveLink] = React.useState(null);
+	const [activeLink, setActiveLink] = React.useState(4);
 
 
 	return(
